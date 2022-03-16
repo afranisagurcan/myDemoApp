@@ -3,3 +3,8 @@ before_install:
  - chmod +x gradlew
 jdk:
   - oraclejdk14
+
+  branches:
+    only:
+      - main
+      - main2
