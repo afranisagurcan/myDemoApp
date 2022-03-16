@@ -4,7 +4,7 @@ before_install:
 jdk:
   - oraclejdk17
 
-  branches:
-    only:
-      - main
-      - main2
+branches:
+  only:
+    - main
+    - main2
