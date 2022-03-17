@@ -1,6 +1,6 @@
 package myDemoApp;
 import java.util.ArrayList;
-
+/*
 import static spark.Spark.get;
 import static spark.Spark.port;
 import static spark.Spark.post;
@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import spark.ModelAndView;
-import spark.template.mustache.MustacheTemplateEngine;
+import spark.template.mustache.MustacheTemplateEngine;*/
 
 
 public class App {
@@ -20,7 +20,7 @@ public class App {
 
         System.out.println(isSameElement(array1,array2,0));
 
-        port(getHerokuAssignedPort());
+        /*port(getHerokuAssignedPort());
 
         get("/", (req, res) -> "Hello, World");
 
@@ -58,12 +58,12 @@ public class App {
               map.put("result", "not computed yet!");
               return new ModelAndView(map, "compute.mustache");
 
-
+*/
     }
 
-    private static int getHerokuAssignedPort() {
+    /*private static int getHerokuAssignedPort() {
       return 0;
-    }
+    }*/
 
     public static boolean isSameElement(ArrayList<Integer> list1 , ArrayList<Integer> list2 , Integer k){
 
@@ -78,17 +78,6 @@ public class App {
         
         return false ;
     }
-
-    public static boolean search(ArrayList<Integer> array, int e) {
-        System.out.println("inside search");
-        if (array == null) return false;
-  
-        for (int elt : array) {
-          if (elt == e) return true;
-        }
-        return false;
-      }
-  
 
 
     
