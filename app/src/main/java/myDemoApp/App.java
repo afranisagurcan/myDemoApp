@@ -1,14 +1,11 @@
 package myDemoApp;
 import java.util.ArrayList;
 
-import spark.Service;
-
 import static spark.Spark.get;
 import static spark.Spark.port;
 import static spark.Spark.post;
 
 import org.apache.logging.log4j.Logger ;
-import org.eclipse.jetty.util.log.Log;
 import org.apache.logging.log4j.LogManager ;
 
 
